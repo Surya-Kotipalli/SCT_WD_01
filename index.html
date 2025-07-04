@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MovieVerse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <nav class="container">
+      <ul class="nav-left">
+        <li><a href="#genres">Browse Genres</a></li>
+        <li><a href="#wishlist">Wishlist (<span id="wishlist-count">0</span>)</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="#" id="login-btn">Login</a></li>
+        <li><a href="#home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to MovieVerse</h1>
+      <p>Your ultimate destination for legendary films</p>
+      <a href="#genres" class="cta-button">Browse Genres</a>
+    </div>
+  </section>
+
+  <!-- Genres Section -->
+  <section id="genres" class="section genres">
+    <h2>Browse by Genre</h2>
+    <div class="genres-grid" id="genres-grid">
+      <!-- Genre cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- Wishlist Section -->
+  <section id="wishlist" class="section">
+    <h2>Your Wishlist</h2>
+    <div id="wishlist-items" class="wishlist-grid">
+      <!-- Wishlist cards injected by JS -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
